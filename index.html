@@ -15,5 +15,18 @@
   }
    </style>
    <body>
+
+     <div id="content"></div>
+     <script type="text/jsx">
+        var baseComponent = React.createClass({
+            render: function() {
+                     return (
+                             <h2>My name is Phil</h2>
+                     );
+                 }
+             });
+             React.render(<baseComponent />, document.getElementById('content'));
+
+         </script>
    </body>
 </html>
